@@ -1,0 +1,176 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Mooli', sans-serif;
+}
+
+body {
+    max-width: 1024px;
+    width: 100%;
+    margin: auto;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+nav ul li {
+    display: inline;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    background-color: rgb(252, 133, 192);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+a:hover {
+    background-color: rgba(252, 133, 192, 0.692);
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3em;
+}
+
+#sobre-a-loja h2 {
+    border-bottom: 3px solid rgb(252, 133, 192);
+}
+
+#sobre-a-loja p {
+    padding: 20px;
+}
+
+#sobre-a-loja {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    grid-gap: 10px;
+}
+
+#produtos {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.produto {
+    list-style: none;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+h2{
+    display: block;
+    border-bottom: 3px solid rgb(252, 133, 192);
+    margin: 20px;
+    padding: 10px;
+}
+
+
+.produto h2{
+    font-size: 1.1em;
+    margin: 2px;
+}
+
+.produto p{
+    text-align: center;
+    padding: 10px;
+}
+
+button {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    background-color: rgb(252, 133, 192);
+    padding: 10px;
+    border: none;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: rgba(252, 133, 192, 0.692);
+}
+
+footer{
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    padding: 20px;
+}
+
+@media screen and (max-width: 767px){
+    #sobre-a-loja{
+        display: block;
+    }
+
+    .produto{
+        display: block;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .produto {
+        margin-bottom: 20px;
+    }
+
+    .produto li {
+        padding: 20px;
+    }
+
+    .produto img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    #sobre-a-loja{
+        display: block;
+    }
+    
+    .container{
+        grid-template-columns: repeat(2, 49%);
+    }
+}
