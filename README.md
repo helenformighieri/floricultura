@@ -1,2 +1,2 @@
-# floricultura
- site responsivo para loja de flores
+Floricultura
+ Site para uma loja de flores, com responsividade aplicada.
